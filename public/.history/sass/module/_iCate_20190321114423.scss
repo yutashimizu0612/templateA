@@ -1,0 +1,16 @@
+.iCate {
+  background: #f5f5f5;
+  padding-top: 70px;
+  &__wrap {
+    display: flex;
+  }
+  &__list {
+    width: 25%;
+  }
+  &__item {
+    margin-bottom: 1.5em;
+    i {
+      margin-right: 10px;
+    }
+  }
+}

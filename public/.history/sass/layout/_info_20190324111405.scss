@@ -1,0 +1,10 @@
+.info {
+  &__wrap {
+    display: flex;
+    align-items: center;
+    p {
+      padding: 10px 30px;
+      background: #f5f5f5;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.cList {
+  display: flex;
+  flex-wrap: wrap;
+  &__text {
+    & h3 {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.cList-3 {
+  .cList__item {
+    width: 32%;
+    &:not(:last-child) {
+      margin-right: 3%;
+    }
+  }
+}
+
+.cList-5 {
+  .cList__item {
+    width: 18%;
+    &:not(:last-child) {
+      margin-right: 2.5%;
+    }
+  }
+}

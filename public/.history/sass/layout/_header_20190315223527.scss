@@ -1,0 +1,17 @@
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    font-size: 1.8rem;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.gNav {
+  display: flex;
+}

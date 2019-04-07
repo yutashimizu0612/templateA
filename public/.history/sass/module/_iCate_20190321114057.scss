@@ -1,0 +1,9 @@
+.iCate {
+  background: #f5f5f5;
+  &__wrap {
+    display: flex;
+  }
+  &__list {
+    width: 25%;
+  }
+}

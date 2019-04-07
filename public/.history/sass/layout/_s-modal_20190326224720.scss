@@ -1,0 +1,9 @@
+.s-modal {
+  display: none;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  z-index: 20;
+}

@@ -1,0 +1,11 @@
+.cList {
+  display: flex;
+  flex-wrap: wrap;
+  &__text {
+    & h3 {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.

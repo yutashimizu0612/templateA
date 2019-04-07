@@ -1,0 +1,11 @@
+.s-modal {
+  display: none;
+  width: 50%;
+  padding: 30px 50px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  z-index: 20;
+  border-radius: 10px;
+}

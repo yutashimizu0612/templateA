@@ -1,0 +1,33 @@
+/* 共通ボタン */
+.moreBtn {
+  position: relative;
+  display: block;
+  background-color: #fff;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  font-family: Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+  font-weight: bold;
+  text-align: center;
+
+  &::before {
+    content: "";
+    background: #f4fa58;
+    width: 120%;
+    height: 120%;
+    position: absolute;
+    left: 0;
+    top: -5%;
+    z-index: 0;
+  }
+
+  span {
+    display: block;
+    border: 2px solid #000;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: 0.2s;ß
+  }
+  &:hover {
+  }
+}

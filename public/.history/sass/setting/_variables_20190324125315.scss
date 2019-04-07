@@ -1,0 +1,8 @@
+//breakpointsの定義
+$breakpoints: (
+  xs: "only screen and (max-width: 360px)",
+  s: "only screen and (max-width: 600px)",
+  m: "only screen and (max-width: 767px)",
+  l: "only screen and (max-width: 991px)",
+  xl: "only screen and (max-width: 1199px)",
+);

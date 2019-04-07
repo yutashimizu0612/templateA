@@ -1,0 +1,12 @@
+footer {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.fTop {
+  &__title {
+    text-align: center;
+    font-size: 2.2rem;
+  }
+}

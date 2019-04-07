@@ -1,0 +1,24 @@
+#pageTop {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 0;
+  bottom: 10%;
+  background: #1a1a1a;
+  
+  a {
+    position: relative;
+    display: block;
+    &::before {
+      font-family: FontAwesome;
+      content: '\f102';
+      font-size: 2.4rem;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+}

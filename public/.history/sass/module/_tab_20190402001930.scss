@@ -1,0 +1,10 @@
+.tab {
+  display: flex;
+  border-bottom: 2px solid #e3e8ed;
+  margin-bottom: 30px;
+  &__item {
+    font-size: 1.6rem;
+    color: #878791;
+    padding: 10px 35px 10px 0;
+  }
+}

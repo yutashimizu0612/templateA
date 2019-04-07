@@ -1,0 +1,67 @@
+/*************************************************
+*  汎用クラス
+**************************************************/
+
+// 見出し
+.mainTitle {
+  margin-bottom: 4rem;
+  position: relative;
+  span {
+    position: relative;
+    font-size: 2.6rem;
+    font-weight: bold;
+    z-index: 2;
+    display: inline-block;
+    // font-family: Georgia, 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", HGS明朝E, メイリオ, Meiryo, serif;
+    background-color: #fff;
+    @include media(s) {
+      font-size: 1.8rem;
+    }
+    @include media(xs) {
+      font-size: 1.6rem;
+    }
+  }
+}
+.mainTitle2 {
+  font-size: 2.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+//レイアウト
+.cInner {
+  width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 1040px) {
+  .cInner {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+//flex
+.flex {
+  display: flex;
+}
+
+.section--main {
+  margin-bottom: 80px;
+}
+
+//overlay
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  z-index: 10;
+  &.open {
+    display: block;
+  }
+}

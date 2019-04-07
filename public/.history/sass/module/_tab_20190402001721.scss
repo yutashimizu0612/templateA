@@ -1,0 +1,9 @@
+.tab {
+  display: flex;
+  border-bottom: 2px solid #e3e8ed;
+  margin-bottom: 30px;
+  &__item {
+    font-size: 1.4rem;
+    color: #878791;
+  }
+}

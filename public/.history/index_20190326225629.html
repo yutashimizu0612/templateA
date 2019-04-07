@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>portfolio_A</title>
+  <!-- mystyle -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- fontAwesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <header>
+
+    <!-- headerTop -->
+    <div class="cInner">
+      <div class="headerTop">
+        <div class="headerTop__left">
+          <h1 class="headerTop__title">portfolio_A</h1>
+        </div>
+        <div class="headerTop__right">
+          <ul class="headerTop__nav">
+            <li><i class="far fa-user fa-2x"></i></li>
+            <li><i class="fas fa-cart-plus fa-2x"></i></li>
+            <li><i class="fas fa-search fa-2x" id="js-show-s-modal"></i></li>
+          </ul>
+          <span class="headerTop__ham" id="js-drawerOpen"><i class="fas fa-bars"></i></span>
+        </div>
+      </div><!-- headerTop -->
+    </div>
+
+    <!-- 検索フォームmodal -->
+    <div class="s-modal" id="js-s-modal">
+      <div class="s-modal__inner">
+        <p><i class="fas fa-times fa-2x" id="js-s-modal-close"></i></p>
+        <form action="" method="get" name="keywordSearch">
+          <i class="fas fa-search fa-2x"></i>
+          <input type="text" name="keyword" placeholder="何をお探しですか？" autocomplete="off">
+          <input type="submit" value="検索">
+        </form>
+      </div>
+    </div>
+
+    <!-- gNav -->
+    <div class="cInner">
+      <ul class="gNav">
+        <li class="gNav__item">
+          <a href="#">CATEGORY</a>
+          <div class="gNav__detail">
+            <ul>
+              <li><a href="#">category1</a></li>
+              <li><a href="#">category2</a></li>
+              <li><a href="#">category3</a></li>
+              <li><a href="#">category4</a></li>
+              <li><a href="#">category5</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="gNav__item"><a href="#">NEWS</a></li>
+        <li class="gNav__item">
+          <a href="#">BRAND</a>
+          <div class="gNav__detail">
+            <ul>
+              <li><a href="#">BRAND1</a></li>
+              <li><a href="#">BRAND2</a></li>
+              <li><a href="#">BRAND3</a></li>
+              <li><a href="#">BRAND4</a></li>
+              <li><a href="#">BRAND5</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="gNav__item"><a href="#">NEW ITEM</a></li>
+        <li class="gNav__item"><a href="#">STORE</a></li>
+      </ul>
+    </div><!-- //gNav -->
+  </header>
+
+  <section class="slide section--main">
+    <div class="mSlider">
+      <ul class="mSlider__list">
+        <li class="mSlider__item"><img src="img/slider001.jpg"></li>
+        <li class="mSlider__item"><img src="img/slider002.jpg"></li>
+        <li class="mSlider__item"><img src="img/slider003.jpg"></li>
+        <li class="mSlider__item"><img src="img/slider004.jpg"></li>
+        <li class="mSlider__item"><img src="img/slider005.jpg"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="info section--main">
+    <div class="info__wrap">
+      <p>INFO</p>
+      <ul id="webTicker">
+        <li><a href="#">2019.03.25 ポイント付与に関してのお知らせ</a></li>
+        <li><a href="#">2019.03.24 4/30まで全品送料無料！</a></li>
+        <li><a href="#">2019.01.23 新生活応援フェア</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- newItem -->
+  <section class="newItem section--main">
+    <div class="cInner">
+      <h2 class="mainTitle"><span>NEW ITEM</span></h2>
+      <ul class="cList cList-4">
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/new001.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+            <h3>タイトル</h3>
+            <span class="cList__date">2019.03.08</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/new002.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+            <h3>タイトル</h3>
+            <span class="cList__date">2019.03.08</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/new003.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+            <h3>タイトル</h3>
+            <span class="cList__date">2019.03.08</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/new004.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+            <h3>タイトル</h3>
+            <span class="cList__date">2019.03.08</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/new005.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+            <h3>タイトル</h3>
+            <span class="cList__date">2019.03.08</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/new006.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+            <h3>タイトル</h3>
+            <span class="cList__date">2019.03.08</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/new007.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+            <h3>タイトル</h3>
+            <span class="cList__date">2019.03.08</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/new001.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+            <h3>タイトル</h3>
+            <span class="cList__date">2019.03.08</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/new004.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+            <h3>タイトル</h3>
+            <span class="cList__date">2019.03.08</span>
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="moreBtn">
+        <span>MORE</span>
+      </a>
+    </div>
+  </section><!-- //newItem -->
+
+  <!-- coordinate -->
+  <section class="coordinate section--main">
+    <div class="cInner">
+      <h2 class="mainTitle"><span>COORDINATE</span></h2>
+      <ul class="cList cList-3">
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/coordinate004.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/coordinate002.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/coordinate003.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/coordinate004.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/coordinate002.jpg" alt="">
+            </div>
+          </a>
+          <div class="cList__text">
+          </div>
+        </li>
+      </ul>
+      <a href="#" class="moreBtn">
+        <span>MORE</span>
+      </a>
+    </div>
+  </section><!-- //coordinate -->
+
+  <!-- ranking -->
+  <section class="ranking section--main">
+    <div class="cInner">
+      <h2 class="mainTitle"><span>RANKING</span></h2>
+      <ul class="cList cList-3">
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/ranking001.jpg" alt="">
+              <div class="rankNum rank1">1</div>
+              <div class="cList__caption">
+                <p>No.1</p>
+              </div>
+            </div>
+          </a>
+          <div class="cList__text">
+            <span class="cList__price">¥72,360</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/ranking002.jpg" alt="">
+              <div class="rankNum rank2">2</div>
+              <div class="cList__caption">
+                <p>No.2</p>
+              </div>
+            </div>
+          </a>
+          <div class="cList__text">
+            <span class="cList__price">¥72,360</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/ranking003.jpg" alt="">
+              <div class="rankNum rank3">3</div>
+              <div class="cList__caption">
+                <p>No.3</p>
+              </div>
+            </div>
+          </a>
+          <div class="cList__text">
+            <span class="cList__price">¥72,360</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/ranking004.jpg" alt="">
+              <div class="rankNum">4</div>
+              <div class="cList__caption">
+                <p>No.4</p>
+              </div>
+            </div>
+          </a>
+          <div class="cList__text">
+            <span class="cList__price">¥72,360</span>
+          </div>
+        </li>
+        <li class="cList__item">
+          <a href="#">
+            <div class="cList__img">
+              <img src="./img/ranking005.jpg" alt="">
+              <div class="rankNum">5</div>
+              <div class="cList__caption">
+                <p>No.5</p>
+              </div>
+            </div>
+          </a>
+          <div class="cList__text">
+            <span class="cList__price">¥72,360</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section><!-- //ranking -->
+
+  <!-- iCate -->
+  <section class="iCate">
+    <div class="cInner">
+      <h2 class="mainTitle2">CATEGORY</h2>
+      <div class="iCate__wrap">
+        <ul class="iCate__list">
+          <li class="iCate__item"><a href="#"><i class="fas fa-couch fa-lg"></i>ソファ</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/dinning.png">ダイニングチェア</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/deskchair.png">オフィスチェア</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/deskchair.png">デスクチェア</a></li>
+          <li class="iCate__item"><a href="#"><i class="fas fa-chair fa-lg"></i>座椅子</a></li>
+        </ul>
+        <ul class="iCate__list">
+          <li class="iCate__item"><a href="#"><img src="./img/icon/table.png">ダイニングテーブル</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/desk.png">デスク</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/shelf.png">棚</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/book.png">本棚</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/carpet.png">カーペット・マット</a></li>
+        </ul>
+        <ul class="iCate__list">
+          <li class="iCate__item"><a href="#"><i class="fas fa-tv fa-lg"></i>テレビ台</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/light.png">照明・ライト</a></li>
+          <li class="iCate__item"><a href="#"><i class="fas fa-bed fa-lg"></i>ベッド</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/pillow.png">寝具</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/mirror.png">ミラー・鏡</a></li>
+        </ul>
+        <ul class="iCate__list">
+          <li class="iCate__item"><a href="#"><img src="./img/icon/curtain.png">カーテン</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/cooking.png">食器棚</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/kitchen.png">キッチン用品</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/flower.png">花器・プランター</a></li>
+          <li class="iCate__item"><a href="#"><img src="./img/icon/clock.png">時計</a></li>
+        </ul>
+      </div>
+    </div>
+  </section><!-- //iCate -->
+
+  <footer>
+    <div class="cInner">
+      <div class="fTop">
+        <h3 class="fTop__title">portfolio_A</h3>
+        <ul class="fTop__sns"></ul>
+      </div>
+      <div class="fBottom">
+        <ul class="fBottom__list"></ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SP時ドロワー -->
+  <div class="drawer">
+    <div class="drawer__wrap">
+      <p><i class="fas fa-times fa-2x" id="js-drawerClose"></i></p>
+      <ul class="drawer__list">
+        <li class="drawer__item"><a href="#">CATEGORY</a></li>
+        <li class="drawer__item"><a href="#">NEWS</a></li>
+        <li class="drawer__item"><a href="#">BRAND</a></li>
+        <li class="drawer__item"><a href="#">NEW ITEM</a></li>
+        <li class="drawer__item"><a href="#">STORE</a></li>
+        <li class="drawer__item"><a href="#">新規会員登録</a></li>
+        <li class="drawer__item"><a href="#">ログイン</a></li>
+        <li class="drawer__item"><a href="#">カート</a></li>
+        <li class="drawer__item"><a href="#">検索</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- topへ戻るボタン -->
+  <div id="pageTop"><a href="#"></a></div>
+  <!-- overlay -->
+  <div class="overlay"></div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+  <!-- slick -->
+  <script src="./js/slick.min.js"></script>
+  <!-- webticker -->
+  <script src="./js/jquery.webticker.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <!-- myJs -->
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

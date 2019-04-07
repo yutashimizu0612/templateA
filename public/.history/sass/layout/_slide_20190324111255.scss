@@ -1,0 +1,35 @@
+.slide {
+  margin-bottom: 50px;
+}
+
+.mSlider {
+  &__item {
+    margin: 0 5px;
+    img {
+      border-radius: 10px;
+    }
+  }
+}
+
+// 矢印
+.prevArrow i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 30px;
+  color: #1a1a1a;
+  z-index: 3;
+  font-size: 2.2em;
+  cursor: pointer;
+}
+
+.nextArrow i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  color: #1a1a1a;
+  z-index: 3;
+  font-size: 2.2em;
+  cursor: pointer;
+}

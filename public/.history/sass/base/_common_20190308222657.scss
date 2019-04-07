@@ -1,0 +1,23 @@
+/*************************************************
+*  汎用クラス
+**************************************************/
+
+// 見出し
+.mainTitle {
+  font-size: 1.5rem;
+  font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+//レイアウト
+.cInner {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+//flex
+.flex {
+  display: flex;
+}

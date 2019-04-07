@@ -1,0 +1,58 @@
+.cList {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+  &__item {
+    margin-bottom: 1.5rem;
+  }
+  &__img {
+    img {
+      &:hover {
+        transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -moz-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        -o-transform: scale(1.05);
+}
+    }
+  }
+  &__text {
+    & h3 {
+      font-size: 1.4rem;
+      font-weight: bold;
+    }
+  }
+  &__date {
+    font-weight: bold;
+  }
+  &__price {
+    font-weight: bold;
+  }
+}
+
+.cList-3 {
+  .cList__item {
+    width: 32.3%;
+    &:not(:nth-of-type(3n)) {
+      margin-right: 1.5%;
+    }
+  }
+}
+
+.cList-4 {
+  .cList__item {
+    width: 23.8%;
+    &:not(:nth-of-type(4n)) {
+      margin-right: 1.5%;
+    }
+  }
+}
+
+.cList-5 {
+  .cList__item {
+    width: 18.8%;
+    &:not(:nth-of-type(5n)) {
+      margin-right: 1.5%;
+    }
+  }
+}

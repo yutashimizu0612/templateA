@@ -1,0 +1,21 @@
+.cList {
+  display: flex;
+  flex-wrap: wrap;
+  &__text {
+    & h3 {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.cList-3 {
+  .cList__item {
+    width: 32%;
+  }
+}
+
+.cList-5 {
+  .cList__item {
+    width: 18%;
+  }
+}

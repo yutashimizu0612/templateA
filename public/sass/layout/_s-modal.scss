@@ -1,0 +1,39 @@
+.s-modal {
+  display: none;
+  width: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  z-index: 20;
+  border-radius: 10px;
+  i {
+    cursor: pointer;
+    color: #000;
+  }
+  form {
+    text-align: right;
+  }
+  &__inner {
+    padding: 20px 50px;
+    p {
+      text-align: right;
+      margin-bottom: 30px;
+    }
+  }
+  .textBtn {
+    width: 100%;
+    height: 35px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  .submitBtn {
+    width: 30%;
+    height: 30px;
+    color: #fff;
+    background: #1a1a1a;
+    border: none;
+    font-size: 14px;
+  }
+}

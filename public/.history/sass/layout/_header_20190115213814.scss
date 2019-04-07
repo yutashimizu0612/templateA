@@ -1,0 +1,52 @@
+.header {
+  height: 50px;
+  background: url('../images/vichy.png');
+  background-color: $base-color;
+  display: flex;
+  justify-content: space-between;
+
+  .header__nav {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    height: 100%;
+    font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+
+    a {
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      -ms-align-items: center;
+      align-items: center;
+      width: 150px;
+      background: url('../images/vichy.png');
+      color: #fff;
+      -webkit-transition: .2s;
+      -o-transition: .2s;
+      transition: .2s;
+
+      &:hover {
+        background-color: $hover-color;
+      }
+
+      > span {
+        margin-left: 5px;
+        font-weight: bold;
+      }
+    }
+
+    //左右でborderの位置調整
+    &._left {
+      a {
+        border-right: 1px solid $hover-color;
+      }
+    }
+
+    &._right {
+      a {
+        border-left: 1px solid $hover-color;
+      }
+    }
+  }
+}

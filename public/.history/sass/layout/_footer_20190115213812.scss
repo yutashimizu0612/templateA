@@ -1,0 +1,15 @@
+.c-footer {
+  background: url('../images/vichy.png');
+  background-color: $base-color;
+  font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+
+  &__inner {
+    max-width: 600px;
+    margin:0 auto;
+  }
+  .copyRight {
+    text-align: center;
+    color: #fff;
+    padding: 1em 0;
+  }
+}

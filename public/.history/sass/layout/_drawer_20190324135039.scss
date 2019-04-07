@@ -1,0 +1,9 @@
+.drawer {
+  width: 320px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -320px;
+  background: #f5f5f5;
+  z-index: 20;
+}

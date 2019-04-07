@@ -1,0 +1,18 @@
+/* 共通ボタン */
+.moreBtn {
+  background-color: $button-color;
+  color: #fff;
+  padding:5px 30px;
+  font-size: 1.0rem;
+  font-family: Georgia,游明朝,"Yu Mincho",YuMincho,"Hiragino Mincho ProN",HGS明朝E,メイリオ,Meiryo,serif;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+
+  &:hover {
+    background-color: $hover-color;
+  }
+}

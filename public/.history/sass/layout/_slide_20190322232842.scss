@@ -1,0 +1,28 @@
+.slide {
+  margin-bottom: 50px;
+}
+
+.mSlider {
+  &__item {
+    margin: 0 3px;
+  }
+}
+
+// 矢印
+.prevArrow i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 5px;
+  color: #1a1a1a;
+  z-index: 3;
+}
+
+.nextArrow i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5px;
+  color: #1a1a1a;
+  z-index: 3;
+}
