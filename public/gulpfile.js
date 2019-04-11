@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 //importでフォルダ一括読み込み
+var browserify = require('browserify');
 var sassGlob = require('gulp-sass-glob');
 //developerツールでコンパイル前のsassファイルを確認
 var sourcemaps = require('gulp-sourcemaps');
@@ -13,6 +14,7 @@ var notify = require('gulp-notify');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 
+
 gulp.task('sass', function() {
   return gulp.src('./sass/**/*.scss')
     .pipe(plumber({errorHandler: notify.onError("エラー: <%= error.message %>")}))
@@ -21,9 +23,11 @@ gulp.task('sass', function() {
     .pipe(sass({outputStyle: 'expanded'}))
     .pipe(postcss([autoprefixer()]))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest('./dist/css'));
 });
 
 gulp.task('watch', function() {
   gulp.watch('./sass/**/*.scss', gulp.task('sass'));
 });
+
+gulp.task('default', gulp.task('sass'));
