@@ -13,6 +13,12 @@ var notify = require('gulp-notify');
 //自動でベンダープレフィックスを付与
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
+//CSSファイルを圧縮
+var cleanCSS = require('gulp-clean-css');
+//rename
+var rename = require('gulp-rename');
+//画像ファイルを圧縮
+var imagemin = require('gulp-imagemin');
 
 
 gulp.task('sass', function() {
@@ -21,8 +27,18 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.init())
     .pipe(sassGlob())
     .pipe(sass({outputStyle: 'expanded'}))
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([
+      autoprefixer({
+        browsers: ["last 2 versions"],
+        cascade: false
+      })
+    ]))
     .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./dist/css'))
+    .pipe(cleanCSS())
+    .pipe(rename({
+      extname: '.min.css'
+    }))
     .pipe(gulp.dest('./dist/css'));
 });
 
