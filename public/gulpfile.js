@@ -45,24 +45,26 @@ gulp.task('sass', function() {
 });
 
 //画像圧縮
-//圧縮前および圧縮後のディレクトリを定義
+//圧縮前（ソース）と圧縮後のファイルを定義
+var src = 'src/img';//圧縮前
+var dist = 'dist/img';//圧縮後
 gulp.task('imagemin', function() {
-  var srcFile = 'src/img/**/*.+(jpg|jpeg|png|gif)';
-  var distFile = 'dist/img';
+  var srcFile = src + '/**/*.+(jpg|jpeg|png|gif)';
   return gulp.src(srcFile)
-    .pipe(changed(distFile))
+    .pipe(changed(dist))
     .pipe(imagemin([
       imagemin.gifsicle({interlaced: true}),
       imagemin.jpegtran({progressive: true}),
       imagemin.optipng({optimizationLevel: 5})
     ]
   ))
-  .pipe(gulp.dest(distFile))
+  .pipe(gulp.dest(dist))
 });
 
 //監視
 gulp.task('watch', function() {
   gulp.watch('./sass/**/*.scss', gulp.task('sass'));
+  gulp.watch(src, gulp.task('imagemin'));
 });
 
 gulp.task('default', gulp.task('sass'));
