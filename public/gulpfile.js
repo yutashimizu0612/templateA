@@ -1,8 +1,9 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
-//importでフォルダ一括読み込み
 var browserify = require('browserify');
+var changed = require('gulp-changed');
+//importでフォルダ一括読み込み
 var sassGlob = require('gulp-sass-glob');
 //developerツールでコンパイル前のsassファイルを確認
 var sourcemaps = require('gulp-sourcemaps');
@@ -21,6 +22,7 @@ var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 
 
+//sassをコンパイル
 gulp.task('sass', function() {
   return gulp.src('./sass/**/*.scss')
     .pipe(plumber({errorHandler: notify.onError("エラー: <%= error.message %>")}))
@@ -42,6 +44,23 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('./dist/css'));
 });
 
+//画像圧縮
+//圧縮前および圧縮後のディレクトリを定義
+gulp.task('imagemin', function() {
+  var srcFile = 'src/img/**/*.+(jpg|jpeg|png|gif)';
+  var distFile = 'dist/img';
+  return gulp.src(srcFile)
+    .pipe(changed(distFile))
+    .pipe(imagemin([
+      imagemin.gifsicle({interlaced: true}),
+      imagemin.jpegtran({progressive: true}),
+      imagemin.optipng({optimizationLevel: 5})
+    ]
+  ))
+  .pipe(gulp.dest(distFile))
+});
+
+//監視
 gulp.task('watch', function() {
   gulp.watch('./sass/**/*.scss', gulp.task('sass'));
 });
