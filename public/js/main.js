@@ -64,6 +64,15 @@ $(function () {
   });
 
   /**********************************
+   * お気に入りボタン
+  ***********************************/
+  $('.js-animation').on('click', function() {
+    var $this = $(this);
+    $this.toggleClass('fas');
+    $this.toggleClass('far');
+    
+  })
+  /**********************************
    * drawer
   ***********************************/
   //drawer open

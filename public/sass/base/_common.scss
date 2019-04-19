@@ -1,4 +1,17 @@
 /*************************************************
+*  レイアウト
+**************************************************/
+.cInner {
+  width: $siteWidth;
+  margin: 0 auto;
+}
+@media (max-width: $siteWidth + 40px) {
+  .cInner {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+/*************************************************
 *  汎用クラス
 **************************************************/
 
@@ -47,18 +60,6 @@
   text-align: center;
   margin-bottom: 3rem;
   position: relative;
-}
-
-//レイアウト
-.cInner {
-  width: 1000px;
-  margin: 0 auto;
-}
-@media (max-width: 1040px) {
-  .cInner {
-    width: 100%;
-    padding: 0 20px;
-  }
 }
 
 //flex

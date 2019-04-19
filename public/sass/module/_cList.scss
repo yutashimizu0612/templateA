@@ -44,6 +44,7 @@
 
   //cList__text
   &__text {
+    position: relative;
     font-size: 1.2rem;
     & h3 {
       font-weight: bold;
@@ -55,61 +56,40 @@
 }
 
 .cList-3 {
+  margin-right: -$space_10;
   .cList__item {
-    width: 32.3%;
-    &:not(:nth-of-type(3n)) {
-      margin-right: 1.5%;
-    }
+    width: calc(33.3% - #{$space_10});
+    margin-right: $space_10;
   }
   @include media(s) {
     .cList__item {
-      width: 49.25%;
-      &:nth-of-type(3n) {
-        margin-right: 1.5%;
-      }
-      &:nth-of-type(2n) {
-        margin-right: 0;
-      }
+      width: calc(50% - #{$space_10});
     }
   }
 }
 
 .cList-4 {
+  margin-right: -$space_10;
   .cList__item {
-    width: 23.8%;
-    &:not(:nth-of-type(4n)) {
-      margin-right: 1.5%;
-    }
+    width: calc(25% - #{$space_10});
+    margin-right: $space_10;
   }
   @include media(m) {
     .cList__item {
-      width: 32.3%;
-      &:nth-of-type(4n) {
-        margin-right: 1.5%;
-      }
-      &:nth-of-type(3n) {
-        margin-right: 0;
-      }
+      width: calc(33.3% - #{$space_10});
     }
   }
   @include media(s) {
     .cList__item {
-      width: 49.25%;
-      &:nth-of-type(3n) {
-        margin-right: 1.5%;
-      }
-      &:nth-of-type(2n) {
-        margin-right: 0;
-      }
+      width: calc(50% - #{$space_10});
     }
   }
 }
 
 .cList-5 {
+  margin-right: -$space_10;
   .cList__item {
-    width: 18.8%;
-    &:not(:nth-of-type(5n)) {
-      margin-right: 1.5%;
-    }
+    width: calc(20% - #{$space_10});
+    margin-right: $space_10;
   }
 }
